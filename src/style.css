@@ -1,8 +1,9 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter/wght.css";
 
 /* Design tokens from the Whitepace Figma file */
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
 
   --color-navy: #043873;
   --color-brand: #4F9CF9;

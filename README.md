@@ -17,6 +17,15 @@ A responsive landing page rebuilt from the free [Whitepace SaaS Landing Page](ht
 3. **One HTML file per section** in `src/sections/`, put together in order by `src/main.ts`.
 4. **Mobile-first layout.** The Figma file has 320px, 768px and 1440px frames. The page follows them and scales between them (headings step down on mid-size screens so nothing overflows).
 
+## Lighthouse (live site)
+
+| | Performance | Accessibility | Best practices | SEO |
+|---|---|---|---|---|
+| Mobile | 99 | 96 | 100 | 100 |
+| Desktop | 100 | 96 | 100 | 100 |
+
+The accessibility gap is the button color from the design: white text on `#4F9CF9` has a contrast of 2.8:1 (WCAG asks for 4.5:1). I kept the Figma color for this demo. On a real project I'd suggest a slightly darker blue to the designer.
+
 ## QA checklist
 
 - Side-by-side comparison with the Figma frames at 1440px and 320px

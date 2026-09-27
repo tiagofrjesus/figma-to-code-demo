@@ -1,0 +1,28 @@
+<header class="relative z-20 bg-navy">
+  <div class="mx-auto flex h-14 max-w-page items-center justify-between px-4 sm:px-8 lg:h-[92px]">
+    <a href="#" aria-label="whitepace home">
+      <img src="assets/logo.svg" alt="whitepace" class="h-6 w-auto lg:h-[31px]" width="190" height="31">
+    </a>
+
+    <button type="button" class="flex h-6 w-[42px] flex-col justify-between py-0.5 lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu" data-menu-toggle>
+      <span class="h-0.5 w-full bg-white"></span>
+      <span class="h-0.5 w-full bg-white"></span>
+      <span class="h-0.5 w-full bg-white"></span>
+    </button>
+
+    <div id="main-menu" data-menu class="absolute inset-x-0 top-full hidden bg-navy px-4 pb-8 pt-4 lg:static lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-[76px] lg:p-0">
+      <nav aria-label="Main">
+        <ul class="flex flex-col gap-6 text-lg font-medium text-white lg:flex-row lg:gap-8">
+          <li><a href="#" class="flex items-center gap-2.5 hover:text-accent">Products <img src="assets/chevron.svg" alt="" class="h-1.5 w-2.5"></a></li>
+          <li><a href="#" class="flex items-center gap-2.5 hover:text-accent">Solutions <img src="assets/chevron.svg" alt="" class="h-1.5 w-2.5"></a></li>
+          <li><a href="#" class="flex items-center gap-2.5 hover:text-accent">Resources <img src="assets/chevron.svg" alt="" class="h-1.5 w-2.5"></a></li>
+          <li><a href="#pricing" class="flex items-center gap-2.5 hover:text-accent">Pricing <img src="assets/chevron.svg" alt="" class="h-1.5 w-2.5"></a></li>
+        </ul>
+      </nav>
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row lg:mt-0 lg:gap-6">
+        <a href="#" class="btn-accent">Login</a>
+        <a href="#" class="btn-primary">Try Whitepace free <img src="assets/arrow.svg" alt="" class="h-2.5 w-2.5"></a>
+      </div>
+    </div>
+  </div>
+</header>

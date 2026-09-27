@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-/* Design tokens from the Figma file go here (colors, fonts, spacing) */
+/* Design tokens from the Whitepace Figma file */
 @theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #043873;
+  --color-brand: #4F9CF9;
+  --color-brand-light: #A7CEFC;
+  --color-placeholder: #C4DEFD;
+  --color-accent: #FFE492;
+  --color-ink: #212529;
+  --color-muted: #A1A1A1;
+  --color-cream: #F7F7EE;
+
+  --container-page: 1376px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink;
+  }
+}
+
+/* Heading word with the yellow brush stroke underneath */
+@utility brush {
+  @apply relative isolate inline-block;
+  & > img {
+    @apply pointer-events-none absolute -bottom-2 left-0 -z-10 w-full;
+  }
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2.5 rounded-lg px-10 py-5 text-lg font-medium leading-none transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand;
+}
+@utility btn-primary {
+  @apply btn bg-brand text-white hover:bg-[#3a8af0];
+}
+@utility btn-accent {
+  @apply btn bg-accent text-ink hover:bg-[#ffdb6e];
 }
